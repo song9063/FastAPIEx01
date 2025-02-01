@@ -12,4 +12,5 @@ app = FastAPI()
 
 @app.post("/users")
 def create_user(user: User):
+    user.age = 20
     return user.dict()
