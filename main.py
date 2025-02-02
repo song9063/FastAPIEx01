@@ -14,4 +14,5 @@ app = FastAPI()
 def create_user(user: User):
     user.age = 20
     user.age = 30
+    user.age = 40
     return user.dict()
